@@ -6,7 +6,7 @@ class Circle:
     Class to calculate the area of a circle, given the radius
     :return: Area of circle
     """
-    def __init__(self, radius):
+    def __init__(self, radius):   # Initialization method to set variable to class
         self.radius = radius
 
     def circ_area(self):
@@ -28,7 +28,7 @@ class Square:
     Class to calculate the area of a square, given the side length
     :return: Area of square
     """
-    def __init__(self, side):
+    def __init__(self, side):   # Initialization method to set variable to class
         self.side = side
 
     def sq_area(self):
@@ -49,7 +49,7 @@ class Rectangle:
     Class to calculate the area of a rectangle, given the length and width
     :return: Area of rectangle
     """
-    def __init__(self, length, width):
+    def __init__(self, length, width):   # Initialization method to set variables to class
         self.length = length
         self.width = width
 
@@ -72,7 +72,7 @@ class Triangle:
     Class to calculate the area of a triangle, given the base and height
     :return: Area of triangle
     """
-    def __init__(self, base, height):
+    def __init__(self, base, height):   # Initialization method to set variables to class
         self.base = base
         self.height = height
 
