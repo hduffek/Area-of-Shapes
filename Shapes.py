@@ -23,7 +23,7 @@ class Shapes:
         self.__height = height
         self.__base = base
 
-    def circle(self):
+    def circle(self) -> int or float:
         """
         Function to calculate the area of a circle, given the radius
         :return: Area of circle
@@ -40,7 +40,7 @@ class Shapes:
 
         return math.pi * (self.__radius * self.__radius)
 
-    def square(self):
+    def square(self) -> int or float:
         """
         Function to calculate the area of a square, given the side length
         :return: Area of square
@@ -56,7 +56,7 @@ class Shapes:
 
         return pow(self.__side, 2)
 
-    def rectangle(self):
+    def rectangle(self) -> int or float:
         """
         Function to calculate the area of a rectangle, given the length and width
         :return: Area of rectangle
@@ -73,7 +73,7 @@ class Shapes:
 
         return self.__length * self.__width
 
-    def triangle(self):
+    def triangle(self) -> int or float:
         """
         Function to calculate the area of a triangle, given the base and height
         :return: Area of triangle
