@@ -10,6 +10,10 @@ class Circle:
         self.radius = radius
 
     def circ_area(self):
+        """
+        Method to carry out area of circle calculation, while checking for valid inputs
+        :return: pi * (radius ** 2)
+        """
         if type(self.radius) != int and type(
                 self.radius) != float:  # Checks for non-integer and non-float type inputs
             raise TypeError('Not numeric input')
@@ -32,6 +36,10 @@ class Square:
         self.side = side
 
     def sq_area(self):
+        """
+        Method to carry out area of square calculation, while checking for valid inputs
+        :return: side ** 2
+        """
         if type(self.side) != int and type(self.side) != float:   # Checks for non-integer and non-float type inputs
             raise TypeError('Not numeric input')
 
@@ -54,6 +62,10 @@ class Rectangle:
         self.width = width
 
     def rect_area(self):
+        """
+        Method to carry out area of rectangle calculation, while checking for valid inputs
+        :return: length * width
+        """
         if (type(self.length) != int and type(self.length) != float) or (
                 type(self.width) != int and type(self.width) != float):   # Checks for incorrect input types
             raise TypeError('Not numeric input')
@@ -77,6 +89,10 @@ class Triangle:
         self.height = height
 
     def tri_area(self):
+        """
+        Method to carry out area of triangle calculation, while checking for valid inputs
+        :return: (1/2) * base * height
+        """
         if (type(self.base) != int and type(self.base) != float) or (
                 type(self.height) != int and type(self.height) != float):   # Checks for incorrect variable types
             raise TypeError('Not numeric input')
