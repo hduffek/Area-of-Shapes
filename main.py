@@ -5,7 +5,7 @@ def main():
 
     window = Tk()
     window.title('Area of Shapes')
-    window.geometry('300x300')
+    window.geometry('500x350')
     window.resizable(False, False)
 
     widgets = GUI(window)
