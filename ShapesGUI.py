@@ -45,7 +45,7 @@ class GUI:
 
         self.entry_rect_wid = Entry(self.frame_rect)
 
-        self.label_rect.pack(padx=4, side='top')
+        self.label_rect.pack(padx=5, side='top')
         self.label_len.pack(padx=5, side='left')
         self.entry_rect_len.pack(padx=2, side='left')
         self.label_wid.pack(padx=5, side='left')
@@ -64,7 +64,7 @@ class GUI:
 
         self.entry_tri_height = Entry(self.frame_tri)
 
-        self.label_tri.pack(padx=9, side='top')
+        self.label_tri.pack(padx=5, side='top')
         self.label_base.pack(padx=9, side='left')
         self.entry_tri_base.pack(padx=5, side='left')
         self.label_height.pack(padx=3, side='left')
@@ -100,16 +100,16 @@ class GUI:
             print('not integer')
 
         c = Circle(circ)
-        self.label_circ_area = Label(self.frame_circ, text=(c.circ_area()))
+        self.label_circ_area = Label(self.frame_circ, text=f'{c.circ_area():.2f}')
         self.label_circ_area.pack()
         s = Square(sq)
-        self.label_sq_area = Label(self.frame_sq, text=(s.sq_area()))
+        self.label_sq_area = Label(self.frame_sq, text=f'{s.sq_area():.2f}')
         self.label_sq_area.pack()
         r = Rectangle(rect_length, rect_width)
-        self.label_rect_area = Label(self.frame_rect, text=(r.rect_area()))
+        self.label_rect_area = Label(self.frame_rect, text=f'{r.rect_area():.2f}')
         self.label_rect_area.pack()
         t = Triangle(tri_base, tri_height)
-        self.label_tri_area = Label(self.frame_tri, text=(t.tri_area()))
+        self.label_tri_area = Label(self.frame_tri, text=f'{t.tri_area():.2f}')
         self.label_tri_area.pack()
 
 
